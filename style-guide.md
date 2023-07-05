@@ -28,5 +28,5 @@ The designs were created to the following widths:
 
 ### Font
 
-- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
+- Family: [Roboto](https://fon ts.google.com/specimen/Roboto)
 - Weights: 400, 700
