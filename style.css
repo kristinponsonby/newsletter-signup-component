@@ -1,11 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	/* changes a default 16px font size to 10px */
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(234, 29%, 20%);
+	min-height: 100vh;
+}
+
+ .column-left {
+  width: 60%;
+}
+
+.column-right {
+	width: 40%; 
+}
+
+.card {
+	display: flex;
+	width: 80rem; 
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 2rem;
+	padding: 4rem;
+}
+
+.card-header {
+	font-size: 4.8rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: hsl(234, 29%, 20%);
+}
+
+.sub-header {
+	font-size: 1.4rem;
+	padding-top: 2rem;
+	color: hsl(234, 29%, 20%);
+}
+.benefits-list {
+	padding: 2rem 0rem 2rem 0rem;
+}
+.list-item {
+	display: flex;
+	align-items: center;
+	font-size: 1.4rem;
+	list-style-type: none;
+	padding: 1rem .5rem 1rem .5rem;
+	color: hsl(234, 29%, 20%);
+}
+
+.check-icon {
+	padding-right: 1rem;
+}
+
+.form-label {
+	color: hsl(234, 29%, 20%);
+	font-size: 1.4rem;
+	font-weight: 800;
+	padding-top: 2rem;
+}
+.form-input {
+	padding: 1.5rem;
+	margin: 1.5rem 0rem 1.5rem;
+	border-radius: 1rem;
+	width: 90%;
+	border: 1px solid hsl(231, 7%, 80%);
+}
+
+::placeholder {
+	color:  hsl(231, 7%, 60%);
+	font-size: 1.4rem;
+}
+
+ .background-image {
+	width: 100%;
+	object-fit: cover;
+} 
+
+.btn-submit {
+	margin: 2rem;
+	padding: .5rem;
+	background-color: hsl(234, 29%, 20%);
+	color: hsl(0, 0%, 100%);
+	font-size: 1.6rem;
+	font-family: 'Roboto' sans-serif;
+	border-radius: 1rem;
+	padding: 2rem 3rem 2rem 3rem;
+	width: 90%;
+	margin: 2rem 0rem 2rem 0rem;
+	border: none;
 }

@@ -7,45 +7,46 @@
 		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<div class="newsletter-card">
-			<div class="row">
-				<div class="col-1-of-2">
+		<div class="card">
+				<div class="column-left">
 					<h1 class="card-header">Stay updated!</h1>
-					<p>Join 60,000+ product managers receiving monthly updates on:</p>
-					<ul>
-						<li>
-							<img src="/assets/images/icon-list.svg" alt="checkmark-icon" />
+					<p class="sub-header">Join 60,000+ product managers receiving monthly updates on:</p>
+					<ul class="benefits-list">
+						<li class="list-item">
+							<img class="check-icon" src="/assets/images/icon-list.svg" alt="checkmark-icon" />
 							Product discovery and building what matters
 						</li>
-						<li>
-							<img src="/assets/images/icon-list.svg" alt="checkmark-icon" />
+						<li class="list-item">
+							<img class="check-icon" src="/assets/images/icon-list.svg" alt="checkmark-icon" />
 							Measuring to ensure updates are a success
 						</li>
-						<li>
-							<img src="/assets/images/icon-list.svg" alt="checkmark-icon" />
+						<li class="list-item">
+							<img class="check-icon" src="/assets/images/icon-list.svg" alt="checkmark-icon" />
 							And much more!
 						</li>
 					</ul>
-					<input
-						type="email"
-						class="form-input"
-						placeholder="email@company.com"
-						id="email"
-						required
-					/>
 					<label for="email" class="form-label">Email address</label>
-					<button class="btn-submit">Subscribe to monthly newsletter</button>
-				</div>
-				<div class="col-2-of-2">
+					<form>
+					<input
+					type="email"
+					class="form-input"
+					placeholder="email@company.com"
+					id="email"
+					required
+					/>
+					<button type="submit" class="btn-submit">Subscribe to monthly newsletter</button>
+				</form>
+			</div>
+				<div class="column-right">
 					<img
+						class="background-image"
 						src="/assets/images/illustration-sign-up-desktop.svg"
 						alt="illustration-signup"
 					/>
 				</div>
-			</div>
 		</div>
 
-		<div class="success-card">
+		<!-- <div class="success-card">
 			<img src="/assets/images/icon-success.svg" alt="" />
 			<h1>Thanks for subscribing!</h1>
 			<p>
@@ -53,12 +54,14 @@
 				it and click the button inside to confirm your subscription.
 			</p>
 			<button class="close-sucess-msg">Dismiss message</button>
-		</div>
+		</div> -->
+		<!-- <footer>
 		<div class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
 			>. Coded by <a href="#">Kristin</a>.
 		</div>
+	</footer> -->
 	</body>
 </html>
