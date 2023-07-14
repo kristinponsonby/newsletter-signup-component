@@ -20,23 +20,31 @@ body {
 	min-height: 100vh;
 }
 
- .column-left {
-  width: 60%;
+.column-left {
+	width: 60%;
 }
 
 .column-right {
-	width: 40%; 
+	width: 40%;
 }
 
-.card {
+.card-1 {
 	display: flex;
-	width: 80rem; 
+	width: 80rem;
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 2rem;
 	padding: 4rem;
 }
 
-.card-header {
+.card-1.hide {
+	display: none;
+}
+
+.card-2.hide {
+	display: none;
+}
+
+.card-1-header {
 	font-size: 4.8rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -56,7 +64,7 @@ body {
 	align-items: center;
 	font-size: 1.4rem;
 	list-style-type: none;
-	padding: 1rem .5rem 1rem .5rem;
+	padding: 1rem 0.5rem 1rem 0.5rem;
 	color: hsl(234, 29%, 20%);
 }
 
@@ -79,18 +87,18 @@ body {
 }
 
 ::placeholder {
-	color:  hsl(231, 7%, 60%);
+	color: hsl(231, 7%, 60%);
 	font-size: 1.4rem;
 }
 
- .background-image {
+.background-image {
 	width: 100%;
 	object-fit: cover;
-} 
+}
 
 .btn-submit {
 	margin: 2rem;
-	padding: .5rem;
+	padding: 0.5rem;
 	background-color: hsl(234, 29%, 20%);
 	color: hsl(0, 0%, 100%);
 	font-size: 1.6rem;
@@ -101,4 +109,96 @@ body {
 	margin: 2rem 0rem 2rem 0rem;
 	border: none;
 	cursor: pointer;
+}
+
+.btn-submit:hover {
+	background-color:hsl(4, 100%, 67%);
+	transition: all .5s;
+}
+
+.card-2 {
+	background-color: hsl(0, 0%, 100%);
+	width: 35rem;
+	padding: 4rem;
+	border-radius: 2rem;
+}
+
+.card-2-icon {
+	width: 4rem;
+	padding-bottom: 1.5rem;
+}
+.card-2 h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.8rem;
+	color: hsl(234, 29%, 20%);
+	padding-bottom: 2rem;
+}
+
+.card-2-message {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	color: hsl(234, 29%, 20%);
+}
+
+.card-2-btn {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	width: 100%;
+	border-radius: 2rem;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(234, 29%, 20%);
+	border: none;
+	border-radius: 0.5rem;
+	padding: 1.5rem 3rem 1.5rem 3rem;
+	cursor: pointer;
+	margin: 2rem 0rem 0rem 0rem;
+}
+
+.card-2-btn:hover {
+	transition: all .5s;
+	background-color:hsl(4, 100%, 67%)
+}
+
+
+@media (max-width: 768px) {
+	.card-1 {
+		flex-direction: column-reverse;
+		width: 100%;
+		padding: 0rem;
+		border-radius: 0rem;
+	}
+
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	.card-1 h1 {
+		font-size: 3rem;
+	}
+
+	.column-left {
+		width: 100%;
+		padding: 2rem;
+	}
+	.background-image {
+		content: url('./assets/images/illustration-sign-up-mobile.svg');
+	}
+
+	.column-right {
+		width: 100%;
+	}
+
+	.form {
+		width: 100%;
+	}
+
+	.btn-submit {
+		font-size: 1.5rem;
+	}
+
+	.card-2 {
+		min-height: 100vh;
+	}
 }
