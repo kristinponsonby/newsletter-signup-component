@@ -8,4 +8,4 @@ Based on a Frontend Mentor challenge
 View live demo here:
 https://newsletter-sign-up-with-success-message-main-kristinponsonby.vercel.app
 
-![Preview of UI component](./design/Preview.png);
+![Preview of UI component](./design/Preview.png)
