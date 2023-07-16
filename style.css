@@ -109,7 +109,7 @@ body {
 	font-size: 1.6rem;
 	font-family: 'Roboto' sans-serif;
 	font-weight: 600;
-	border-radius: 1rem;
+	border-radius: 3rem;
 	padding: 2rem 3rem 2rem 3rem;
 	width: 90%;
 	margin: 2rem 0rem 2rem 0rem;
@@ -119,13 +119,13 @@ body {
 
 .btn-submit:hover {
 	background-color:rgb(15 104 247);
-	border-radius: 2rem;
+	border-radius: 3rem;
 	color:white;
 	transition: all .4s;
 }
 
 .card-2 {
-	background-image: linear-gradient(to right top, purple 75%,blue);
+	background-image: linear-gradient(to right top, #650465 20%,rgb(15 104 247));
 	width: 35rem;
 	padding: 4rem;
 	border-radius: 2rem;
@@ -138,7 +138,7 @@ body {
 .card-2 h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 3.8rem;
-	color: hsl(234, 29%, 20%);
+	color:white;
 	padding-bottom: 2rem;
 }
 
@@ -146,27 +146,28 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.2rem;
 	line-height: 1.5rem;
-	color: hsl(234, 29%, 20%);
+	color: white
 }
 
 .card-2-btn {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
-	font-weight: 500;
+	font-weight: 600;
 	width: 100%;
 	border-radius: 2rem;
-	color: hsl(0, 0%, 100%);
-	background-color: hsl(234, 29%, 20%);
+	background-color:  rgb(255, 255, 255);
+	color: hsl(276, 66%, 25%);
 	border: none;
-	border-radius: 0.5rem;
-	padding: 1.5rem 3rem 1.5rem 3rem;
+	padding: 1rem 3rem 1rem 3rem;
 	cursor: pointer;
 	margin: 2rem 0rem 0rem 0rem;
 }
 
 .card-2-btn:hover {
-	transition: all .5s;
-	background-color:hsl(4, 100%, 67%)
+	background-color:rgb(15 104 247);
+	border-radius: 2rem;
+	color:white;
+	transition: all .4s;
 }
 
 
